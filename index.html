@@ -18,8 +18,8 @@ body {
 </head>
 <body>
     <header>
-        <nav class="nav-section navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid my-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center align-items-center">
+            <div class="container my-navbar">
               <a class="navbar-brand" href="#"><img src="./fdelivery-logo.svg" alt="fdelivery-logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,20 +30,20 @@ body {
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#Feature-section">About</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="#catagory-section">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Food</a>
+                    <a class="nav-link" href="#catagory-section">Food</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Recipes</a>
+                    <a class="nav-link" href="#testimonial-section">Recipes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
                 <div class="input-search">
@@ -62,23 +62,24 @@ body {
     </header>
     <main class="d-flex justify-content-center flex-column align-items-center">
         <!-- hero-section -->
-        <div class="hero-section d-flex justify-content-center align-items-center">
+        <section id="hero-section" class="hero-section d-flex justify-content-center align-items-center">
+          <div class="main-section d-flex justify-content-center align-items-center">  
             <div class="intro">
-                <div class="badge"><img src="./Group 1000002652.svg" alt="badge"></div>
-                <h1>Get your cuisine delivered right to <span class="highlighter">your door</span></h1>
-                <p >Food that is delivered at the right time. The trendy food delivery partner. Good food is what we deliver. Your hunger companion.</p>
-                <button>Explore Food</button>
-            </div>
-            <div class="intro-image" >
-            <img src="./Frame.svg" alt="intro-image" >
-            </div>
-        </div>
-      </div>
+                  <div class="badge"><img src="./Group 1000002652.svg" alt="badge"></div>
+                  <h1>Get your cuisine delivered right to <span class="highlighter">your door</span></h1>
+                  <p >Food that is delivered at the right time. The trendy food delivery partner. Good food is what we deliver. Your hunger companion.</p>
+                  <button>Explore Food</button>
+              </div>
+              <div class="intro-image" >
+              <img src="./Frame.svg" alt="intro-image" >
+              </div>
+          </div>
+        </section>
 
         <!-- feature section -->
-        <div class="features d-flex justify-content-center align-items-center">
+        <section id="Feature-section" class="features d-flex justify-content-center align-items-center">
           <div class="my-card">
-            <div><h1>Why we are Best in our Town</h1></div>
+            <div><h2>Why we are Best in our Town</h2></div>
             <p>whole grains and low-fat dairy can help to reduce your risk of heart disease by maintaining blood pressure and</p>
           </div>
           <div class="my-card">
@@ -93,12 +94,12 @@ body {
             <div><img src="./Group 1000002741.svg" alt=""></div>
             <h5 class="fw-bold">We have 400+ Review On our app</h5>
           </div>
-        </div>
+        </section>
         
         <!-- category section -->
-        <div class="catagory-section text-center">
+        <section id="catagory-section" class="catagory-section d-flex justify-content-center align-items-center flex-column">
           <h2 class="fw-bold">Try Our Special Recipes</h2>
-          <nav aria-label="...">
+          <nav aria-label="d-flex justify-content-center align-items-center">
             <ul class="pagination pagination-sm">
               <li class="page-item"><a class="page-link" href="#">Fast Food</a></li>
               <li class="page-item"><a class="page-link" href="#">Rice Menu</a></li>
@@ -164,12 +165,33 @@ body {
                   </div> 
               </div>
           </div>  
-        </div>
+        </section>
 
         <!-- testimonial section --> 
-        <section class="testimonial-section p-50; d-flex justify-content-center align-items-center">
-          <div class="content d-flex justify-content-center align-items-center flex-row">  
+        <section id="testimonial-section" class="testimonial-section d-flex justify-content-center align-items-center">
+          <div class="content d-flex justify-content-center align-items-center ">  
             <div class="my-container d-flex justify-content-center flex-column align-items-center">
+                <div class="card person d-flex  align-items-center flex-row">
+                  <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+                  <div class="profile d-inline-block">
+                    <h6 class="fw-bold">Rosele Desoza</h6>
+                    <h6 class="fw-light profile-deg">Marketing Coordinator</h6>   
+                  </div>  
+                </div>
+                <div class="card person d-flex  align-items-center flex-row">
+                  <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+                  <div class="profile d-inline-block">
+                    <h6 class="fw-bold">Rosele Desoza</h6>
+                    <h6 class="fw-light profile-deg">Marketing Coordinator</h6>   
+                  </div>  
+                </div>
+                <div class="card person d-flex  align-items-center flex-row">
+                  <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+                  <div class="profile d-inline-block">
+                    <h6 class="fw-bold">Rosele Desoza</h6>
+                    <h6 class="fw-light profile-deg">Marketing Coordinator</h6>   
+                  </div>  
+                </div>
                 <div class="card person d-flex  align-items-center flex-row">
                   <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
                   <div class="profile d-inline-block">
@@ -223,88 +245,92 @@ body {
               <div>
                 <p class="fw-light">“Having good restaurant reviews is crucial these days. It is not just making our decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy and paste these good restaurant review examples, publish them on Facebook”</p>
               </div>
-          
             </div>
           </div>
         </section>
 
+        <!-- Picture Section -->
         <section class="picture-section d-flex justify-content-center align-items-center">
-          <div class="pic d-flex justify-content-center align-items-center"><img src="./Group 1000002779.svg" alt=""></div>
+          <div class="pic d-flex justify-content-center align-items-center">
+            <img src="./Group 1000002779.svg" alt="">
+          </div>
         </section>
     </main>
-    <footer class="d-flex justify-content-center align-items-center">
-      <div class="footer-item d-flex justify-content-between align-items-center">
-      <div class="first">
-        <img src="./fdelivery-logo.svg" alt=""/>
-        
-        <p><br>Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery</p>
-        <div class="d-flex">
-          <div class="icon-set d-flex justify-content-center align-items-center">
-            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-          </div>
-          <div class="icon-set d-flex justify-content-center align-items-center">
-            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-          </div>
-          <div class="icon-set d-flex justify-content-center align-items-center">
-            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+    <footer id="contact" class="d-flex justify-content-center align-items-center">
+      <div class="footer-item d-flex justify-content-around align-items-center">
+        <div class="first">
+          <img src="./fdelivery-logo.svg" alt=""/>
+          
+          <p><br>Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery</p>
+          <div class="d-flex">
+            <div class="icon-set d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon-set d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon-set d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="second">
-        <table>
-          <thead>
-            <th>Company</th>
-            <th>Services</th>
-            <th>Support</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><br></td>
-            </tr>
-            <tr>
-              <td>About US</td>
-              <td>Order Tracking</td>
-              <td>FAQ</td>
-            </tr>
-            <tr>
-              <td>Blog</td>
-              <td>Wish List</td>
-              <td>Policy</td>
-            </tr>
-            <tr>
-              <td>All Products</td>
-              <td>My account</td>
-              <td>Business</td>
-            </tr>
-            <tr>
-              <td>Location Map</td>
-              <td>Terms & conditions</td>
-              <td>Support Carrer</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="third">
-        <table>
-          <thead>
-          <th>Contact</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><br></td>
-            </tr>
-            <tr>
-              <td>WhatsApp</td>
-            </tr>
-            <tr>
-              <td>Support 24</td>
-            </tr>
-            <tr>
-              <td>Quick Chat</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="second ">
+          <table>
+            <thead>
+              <th>Company</th>
+              <th>Services</th>
+              <th>Support</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><br></td>
+              </tr>
+              <tr>
+                <td>About US</td>
+                <td>Order Tracking</td>
+                <td>FAQ</td>
+              </tr>
+              <tr>
+                <td>Blog</td>
+                <td>Wish List</td>
+                <td>Policy</td>
+              </tr>
+              <tr>
+                <td>All Products</td>
+                <td>My account</td>
+                <td>Business</td>
+              </tr>
+              <tr>
+                <td>Location Map</td>
+                <td>Terms & conditions</td>
+                <td>Support Carrer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="third d-flex justify-content-center align-items-center">
+          <div>
+          <table>
+            <thead>
+            <th>Contact</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><br></td>
+              </tr>
+              <tr>
+                <td>WhatsApp</td>
+              </tr>
+              <tr>
+                <td>Support 24</td>
+              </tr>
+              <tr>
+                <td>Quick Chat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
     </div>
     </footer>
 
