@@ -8,14 +8,13 @@ header{
 .my-navbar{
     width: 85%;
     position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 15px;
-  background-color: #fffdf7;
-z-index: 10000;
+    top: 0;
+    width: 100%;
+    padding-top: 15px;
+    background-color: #fffdf7;
+    z-index: 10000;
 }
 .nav-link{
-    font-family: poppins;
     font-size: 14px!important;
     font-weight: 400;
     color: black!important;
@@ -52,7 +51,8 @@ z-index: 10000;
 .hero-section{
     background-color: #fffdf7;
     /* border: 1px solid black; */
-    height: 600px;
+    height: 700px;
+    margin-top: 40px;
 }
 .intro{
     /* border: 1px solid black; */
@@ -100,7 +100,7 @@ z-index: 10000;
     width:250px;
     height:300px;
     border: 2px solid grey;
-    margin-inline: 20px;
+    margin-inline: 25px;
     border-radius: 10px!important;
     display: flex;
     justify-content: center;
@@ -240,8 +240,8 @@ tr,td{
 
 @media screen and (max-width: 767px){
 .main-section{
-    margin-top: 50px;
-    flex-direction: column;
+    margin-top: -250px;
+    flex-direction: column-reverse;
 }
 .intro{
     width: 100%;
@@ -257,7 +257,7 @@ tr,td{
 .intro-image>img{
     width: 100%;
     height: auto;
-    margin: auto;
+
 }
 
 .features{
