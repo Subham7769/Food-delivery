@@ -9,7 +9,6 @@ header{
     width: 85%;
     position: fixed;
     top: 0;
-    width: 100%;
     padding-top: 15px;
     background-color: #fffdf7;
     z-index: 10000;
@@ -107,10 +106,18 @@ header{
     align-items: center;
     flex-direction: column;
     padding: 25px;
+    text-overflow: clip;
 }
 .my-card>img{
     width: 130px;
     height: 130px;
+}
+.my-card>div>h2{
+    font-size: 1.6rem;
+}
+.my-card>div>p{
+    font-size: 1rem;
+
 }
 .nav-items{
     border-bottom: 1px solid darkgrey;
@@ -127,11 +134,15 @@ header{
 }
 .catagory-section-row{
     width: 100%;
-    overflow-x: scroll;
     
 }
 .my-list{
     white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-x: scroll;
 }
 .catagory-section{
     margin-top: 30px;
@@ -238,7 +249,7 @@ tr,td{
     width:85%;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width:768px){
 .main-section{
     margin-top: -250px;
     flex-direction: column-reverse;
@@ -257,20 +268,34 @@ tr,td{
 .intro-image>img{
     width: 100%;
     height: auto;
+}
+.main-section{
+    height: 300px;
+}
+.hero-section{
+    height: 400px;
+    margin-top: 200px;
+}
+.my-card>h2{
+    font-size: 1.6rem;
+}
+.my-card>p{
+    font-size: 1rem;
 
 }
-
+.menu{
+    display: block;
+    
+}
 .features{
     margin-top: 20px;
     width: 100%;
     flex-direction: column;
-
 }
 
 .my-card{
     margin: 10px;
 }
-
 .catagory-section{
     width: 100%;  
 }
@@ -298,8 +323,6 @@ tr,td{
 .my-container-description{
     width: 100%;
 }
-
-
 .picture-section{
     margin:-150px;
 }
